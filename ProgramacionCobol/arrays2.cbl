@@ -8,13 +8,20 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. POBLAR-ARRAY1-CLASE-9.
        DATA DIVISION.
+      *
+      * Declaramos las variables en sus distintos niveles
        WORKING-STORAGE SECTION.
+      * MY-ARRAY es un arreglo que contiene MY_ELEMENTS. 
        01  MY-ARRAY.
+      * MY_ELEMENTS es un grupo que se repite 5 veces y contiene ELEMENT.
            02  MY_ELEMENTS OCCURS 5 TIMES.
+      * ELEMENT es un número de dos dígitos.
                03  ELEMENT PIC 9(2).
 
        PROCEDURE DIVISION.
        MAIN-LOGIC.
+      * 
+      * Llena el arreglo con numeros
        MOVE 10 TO ELEMENT(1)
        MOVE 20 TO ELEMENT(2)
        MOVE 30 TO ELEMENT(3)
@@ -25,7 +32,8 @@
        PERFORM DISPLAY-ELEMENTS
 
        STOP RUN.
-
+      *
+      * Subrutina para mostrar cada elemento del arreglo
        DISPLAY-ELEMENTS.
        DISPLAY "Elemento 1: " ELEMENT(1)
        DISPLAY "Elemento 2: " ELEMENT(2)
