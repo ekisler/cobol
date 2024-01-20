@@ -1,0 +1,8 @@
+       SELECT OPTIONAL CLIENTES ASSIGN TO "./clientes.dat"
+                      ORGANIZATION INDEXED
+                      ACCESS MODE DYNAMIC
+                      RECORD KEY IS ID_CLIENTE
+                      ALTERNATE KEY CLI_NOMBRE WITH DUPLICATES
+                      ALTERNATE KEY CLI_ALT_2  WITH DUPLICATES 
+                      STATUS ST-FILE.
+                      

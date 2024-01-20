@@ -62,6 +62,8 @@
         03 VALORES OCCURS 12 TIMES.
           05 VALORDIA OCCURS 31 TIMES.
             07 VALOR-VENTA PIC S9(09)V999.    
+       
+       01 FACT-FECHA PIC X(9).
 
        01 FECHA-AUX.
           02 AA   PIC 9999.

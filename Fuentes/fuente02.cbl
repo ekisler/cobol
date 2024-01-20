@@ -1,8 +1,8 @@
       ******************************************************************
-      * Author: Emisael Kisler
-      * Date: 23/12/2023
-      * Purpose: Education
-      * Tectonic: cobc
+      * Author: Pablo Tilotta                                          *
+      * Date: 23/12/2023                                               *  
+      * Purpose: Education                                             *
+      * Tectonic: cobc                                                 *
       ****************************************************************** 
        IDENTIFICATION DIVISION.
        PROGRAM-ID. "INICIO".
@@ -82,7 +82,7 @@
       
        LEO-DATOS.
         INITIALIZE REG-CLIENTES.
-        START  CLIENTES KEY IS NOT LESS THAN ID_CLIENTE.
+        START CLIENTES KEY IS NOT LESS THAN ID_CLIENTE.
         READ CLIENTES NEXT RECORD.
         IF ST-FILE = "99" GO TO LEO-DATOS.
         IF ST-FILE > "07"
@@ -90,15 +90,15 @@
 
        MUESTRO-DATOS.
         MOVE -15,58 TO SALDO-ZZ.
-        DISPLAY "Id Cliente"  LINE 10 COL 5.
-        DISPLAY "Saldo"       LINE 11 COL 5.
-        DISPLAY "Nombre"      LINE 12 COL 5.
-        DISPLAY "Direccion"   LINE 13 COL 5.
-        DISPLAY CLI_ID        LINE 10 COL 30.
-        DISPLAY SALDO-ZZ       LINE 11 COL 30.
-        DISPLAY CLI_NOMBRE    LINE 12 COL 30.
-        DISPLAY CLI_DIRECCION LINE 13 COL 30.
-        ACCEPT X LINE 14 COL 70.
+        DISPLAY "Id Cliente"    LINE 10 COL 5.
+        DISPLAY "Saldo"         LINE 11 COL 5.
+        DISPLAY "Nombre"        LINE 12 COL 5.
+        DISPLAY "Direccion"     LINE 13 COL 5.
+        DISPLAY CLI_ID          LINE 10 COL 30.
+        DISPLAY SALDO-ZZ        LINE 11 COL 30.
+        DISPLAY CLI_NOMBRE      LINE 12 COL 30.
+        DISPLAY CLI_DIRECCION   LINE 13 COL 30.
+        ACCEPT X                LINE 14 COL 70.
 
        F-LEO-DATOS.
         EXIT.

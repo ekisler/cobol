@@ -10,7 +10,7 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-       01 MES-INGRESADO        PIC 99 value 0.
+       01 MES-INGRESADO.
 
            05 ENERO      PIC X(7) value 'ENERO'.
            05 FEBRERO    PIC X(9) value 'FEBRERO'.
@@ -44,7 +44,7 @@
          ACCEPT MES-INGRESADO.
 
          IF MES-INGRESADO = 1
-           DISPLAY "El mes de " ENERO "tiene " ENERO-DIAS " dias"
+           DISPLAY "El mes de " ENERO "tiene " ENERO-DIAS " dia"
 
          ELSE IF MES-INGRESADO = 2
            DISPLAY "El mes de " FEBRERO "tiene " FEBRERO-DIAS " dias" 
