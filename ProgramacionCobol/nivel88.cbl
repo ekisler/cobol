@@ -1,7 +1,7 @@
       *================================================================*
       * Author: Emisael Kisler.                                        *
       * Date: 19/01/2024.                                              *
-      * Purpose: Operaciones Aritmecias Basicas.                       *
+      * Purpose: Evaluate Basico.                                      *
       * Tectonics: cobc.                                               * 
       *================================================================*
        IDENTIFICATION DIVISION.
@@ -31,7 +31,7 @@
        STOP RUN.
 
        INICIO.
-            DISPLAY "POCISION SEGUN SUELDO EN LATINOAMERICA"
+            DISPLAY "POSICION SEGUN SUELDO EN LATINOAMERICA"
             DISPLAY "Introduce tu sueldo en $ EEUU al mes: "
             ACCEPT SEGUN-SUELDO.
             PERFORM PROCESO
